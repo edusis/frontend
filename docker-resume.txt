@@ -1,0 +1,8 @@
+
+
+docerk build -f filedocker.txt
+docker build -t friendlyhello .
+docerk build -f filedocker.txt -t myimage .
+
+sudo docker stop $(sudo docker ps -a -q)
+sudo docker rm -f $(sudo docker ps -a -q)
